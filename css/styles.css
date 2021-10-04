@@ -1,0 +1,189 @@
+/* Для хранения палитры цветов макета (текст, фон, выделение) используются CSS-переменные. */
+:root {
+    --text-color: #757575;
+    --text-bold-color: #212121;
+    --transparent-text-color: rgba(255, 255, 255, 0.6);
+    --accent-color: #2196f3;
+    --hero-button-hover-color: #188ce8;
+    --footer-color: #2f303a;
+    --gray-background: #f5f4fa;
+    --header-line-color: #ececec;
+    --white: #fff;
+  }
+  
+  /* .header{
+      display: flex;
+      flex-direction: row;      
+  } */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+    color: var(--text-color);
+}
+/* nav-index */
+.nav {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    color: var(--text-bold-color);
+}
+.nav__adress{
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    color: inherit;
+}
+.nav:hover,
+.nav:focus,
+.nav__adress:hover,
+.nav__adress:focus{
+    color: var(--accent-color);
+}
+/* logo */
+.web {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+}
+.Studio {
+    color: #000000
+}
+/* hero-index */
+.hero{
+    width: 1600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: var(--footer-color);
+}
+.hero__bg {
+    flex-wrap: wrap;
+    margin: 452px;
+    margin-top: 200px ;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+}
+.hero__button{
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: 50px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    background-color: var(--accent-color);
+}
+.hero__button:hover,
+.hero__button:focus{
+    background-color: var(--hero-button-hover-color);
+}
+/* Наши преимущества */
+.feature__title .feature{
+    font-size: 14px;
+    line-height: 1.14 ;
+    font-weight: 700;
+    color: var(--text-bold-color);
+    text-transform: uppercase;
+}
+.feauter__text{
+    line-height: 1.71;
+}
+/* Чем мы занимемся */
+.heading{
+    color: var(--text-bold-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+/* Наша команда */
+.team__member{
+    font-size: 16px;
+    line-height: 1.19;
+    font-weight: 500;
+    color: var(--text-bold-color);
+}
+
+.team__job{
+    font-size: 16px;
+    line-height: 1.18;
+}
+/* portfolio.html */
+/* .filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+} */
+.portfolio__button{
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    color: var(--text-bold-color);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.portfolio__button:focus,
+.portfolio__button:hover{
+    background-color: var(--accent-color);
+    color: var(--white);
+    border-radius: 4px;
+}
+
+.portfolio__heading{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--text-bold-color);
+}
+.text{
+    font-size: 16px;
+    line-height: 1.87;
+}
+/* footer */
+.footer {    
+    background-color: var(--footer-color);
+}
+.footer__map{
+    font-style: normal;
+    color: var(--white);
+}
+.footer__address{
+    font-style: normal;
+    color: var(--transparent-text-color);
+}
+.footer__address:hover,
+.footer__address:focus {
+  color: var(--accent-color);
+}
+.Studio-footer {
+    color: var(--white);
+}
+
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
