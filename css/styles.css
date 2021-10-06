@@ -11,16 +11,10 @@
     --white: #fff;
   }
   
-  /* .header{
-      display: flex;
-      flex-direction: row;      
-  } */
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--white);
     font-size: 14px;
-    font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 1.71;
     color: var(--text-color);
@@ -31,6 +25,10 @@ body {
     letter-spacing: 0.02em;
     line-height: 1.14;
     color: var(--text-bold-color);
+}
+
+.current{
+    color: var(--accent-color);
 }
 .nav__adress{
     font-weight: 500;
@@ -52,25 +50,14 @@ body {
     line-height: 1.19;
     color: var(--accent-color);
 }
-.Studio {
+.studio {
     color: #000000
 }
 /* hero-index */
 .hero{
-    width: 1600px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
     background-color: var(--footer-color);
 }
 .hero__bg {
-    flex-wrap: wrap;
-    margin: 452px;
-    margin-top: 200px ;
-    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -86,24 +73,25 @@ body {
     height: 50px;
     font-family: inherit;
     font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
     cursor: pointer;
     background-color: var(--accent-color);
+    color: var(--white);
 }
 .hero__button:hover,
 .hero__button:focus{
     background-color: var(--hero-button-hover-color);
 }
 /* Наши преимущества */
-.feature__title .feature{
+.feature__title{
     font-size: 14px;
-    line-height: 1.14 ;
-    font-weight: 700;
-    color: var(--text-bold-color);
+    line-height: 1.14 ;    
+    font-weight: 700;    
     text-transform: uppercase;
+    color: var(--text-bold-color);
 }
-.feauter__text{
+.feature__text{
     line-height: 1.71;
 }
 /* Чем мы занимемся */
@@ -133,20 +121,22 @@ body {
     justify-content: center;
     
 } */
-.portfolio__button{
+.filter__button{
     border: none;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
     color: var(--text-bold-color);
     background-color: var(--white);
+    letter-spacing: 0.03em;
     cursor: pointer;
 }
 
-.portfolio__button:focus,
-.portfolio__button:hover{
+.filter__button:focus,
+.filter__button:hover{
     background-color: var(--accent-color);
     color: var(--white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); /*было сказано доработать*/
     border-radius: 4px;
 }
 
@@ -157,7 +147,7 @@ body {
     letter-spacing: 0.06em;
     color: var(--text-bold-color);
 }
-.text{
+.portfolio__text{
     font-size: 16px;
     line-height: 1.87;
 }
@@ -165,20 +155,22 @@ body {
 .footer {    
     background-color: var(--footer-color);
 }
-.footer__map{
-    font-style: normal;
+.footer__map{    
     color: var(--white);
 }
-.footer__address{
-    font-style: normal;
+.footer__address{    
     color: var(--transparent-text-color);
 }
 .footer__address:hover,
 .footer__address:focus {
   color: var(--accent-color);
 }
-.Studio-footer {
+.studio-footer {
     color: var(--white);
+}
+
+.normal{
+    font-style: normal;
 }
 
 .list{
