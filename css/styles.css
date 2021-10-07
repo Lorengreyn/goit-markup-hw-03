@@ -228,8 +228,10 @@ img {
 
 .heading__list{
     display: flex;
-    justify-content: space-between;
-}
+    }
+
+.heading__item + .heading__item{
+    margin-left: 30px;}
 
 
 .heading__pudding{
