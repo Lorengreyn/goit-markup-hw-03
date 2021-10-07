@@ -232,9 +232,6 @@ img {
     flex-wrap: wrap;
 }
 
-.heading__item:not(:last-child){
-    margin-right: 30px;
-}
 
 .heading__pudding{
     padding-top: 0;
